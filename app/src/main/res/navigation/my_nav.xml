@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/login">
+    app:startDestination="@id/mapsFragment2">
 
     <fragment
         android:id="@+id/login"
@@ -19,4 +19,9 @@
         android:name="com.example.weatherapp.WeatherDisplay"
         android:label="fragment_weather_display"
         tools:layout="@layout/fragment_weather_display" />
+    <fragment
+        android:id="@+id/mapsFragment2"
+        android:name="com.example.weatherapp.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>

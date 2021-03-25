@@ -36,7 +36,8 @@ class Login : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_login, container, false)
-        //view.login.setOnClickListener{ Navigation.findNavController(view).navigate(R.id.action_login_to_weatherDisplay) }
+        val x = childFragmentManager.findFragmentById(R.id.loginx)
+       // x.setOnClickListener{ Navigation.findNavController(view).navigate(R.id.action_login_to_weatherDisplay) }
         return view
     }
 
