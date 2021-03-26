@@ -3,25 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/mapsFragment2">
-
-    <fragment
-        android:id="@+id/login"
-        android:name="com.example.weatherapp.Login"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_login_to_weatherDisplay"
-            app:destination="@id/weatherDisplay" />
-    </fragment>
-    <fragment
-        android:id="@+id/weatherDisplay"
-        android:name="com.example.weatherapp.WeatherDisplay"
-        android:label="fragment_weather_display"
-        tools:layout="@layout/fragment_weather_display" />
-    <fragment
-        android:id="@+id/mapsFragment2"
-        android:name="com.example.weatherapp.MapsFragment"
-        android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" />
+    app:startDestination="@id/mapsActivity">
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.example.weatherapp.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" />
 </navigation>
